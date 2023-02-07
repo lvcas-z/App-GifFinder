@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { AddCategory } from './components/AddCategory'
+import { Footer } from './components/Footer'
 import { GifGrid } from './components/GifGrid'
 
 export const GifFinderApp = () => {
@@ -15,8 +16,8 @@ export const GifFinderApp = () => {
     <>
         <h1>Gif Finder App</h1>
         <AddCategory onNewCategory={onAddCategory}/>
-            
         {categories.map( category =><GifGrid key={category} category={category} />)}
+        <Footer/>
     </>
     )
 }

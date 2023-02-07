@@ -1,28 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;900&display=swap');
 * {
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    margin: 0;
+    padding: 1rem;
 }
-
-body {
-    padding: 60px;
+form{
+    display: flex;
+    gap: 1rem;
 }
-
 input {
     background-color: white;
     border-radius: 5px;
-    border: 1px solid rgb(97, 32, 158);
+    border: 2px solid rgba(123,1,210,1);
     color: black;
     font-size: 1.2rem;
     outline: none;
     padding: 10px 15px;
+    width: 80%;
+}
+h1{
+    text-align: center;
+    position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
     width: 100%;
+    left: 0;
+    background: rgb(172, 7, 248);
+    background: linear-gradient(90deg, rgba(123,3,180,1) 0%, rgba(123,1,210,1) 9%, rgba(121,9,108,1) 35%, rgba(203,43,112,1) 77%, rgba(255,88,0,1) 100%);
+    animation: rotate 5s linear infinite;
 }
-
-h2 {
-    font-size: 1.5rem;
+button{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,80,1) 50%, rgba(252,69,69,1) 100%);animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite;
+    border: 0;
+    border-radius: 1rem;
 }
-
+@keyframes rotate {
+    100%{
+        filter:hue-rotate(360deg) ;
+    }
+}
 h3 {
+    text-transform: capitalize;
     font-size: 3rem;
     margin-bottom: 5px;
 }
@@ -36,9 +62,7 @@ h3 {
 .card {
     align-content: center;
     align-items: center;
-    background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     height: 0%;  
@@ -48,13 +72,14 @@ h3 {
     overflow: hidden;
 }
 .card p {
-    background-color: white;
     flex: 1;
     font-size: 1.5rem;
     margin-top: 5px;
-    padding: 5px 20px 0px 20px;
     text-align: center;
 }
 .card img {
     width: 100%;
+}
+footer{
+    text-align: center;
 }
