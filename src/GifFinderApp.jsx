@@ -4,7 +4,7 @@ import { GifGrid } from './components/GifGrid'
 
 export const GifFinderApp = () => {
     const apiKey = 'RglSMFKJLvS78G5BXIPSW9Io6BKvilK4'
-    const [categories, setcategories] = useState(['Messi'])
+    const [categories, setcategories] = useState([])
 
     const onAddCategory = (newCategory) =>{
         if(categories.includes(newCategory))return
