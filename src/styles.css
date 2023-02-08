@@ -23,6 +23,7 @@ input {
 h1{
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 h1::after{
     content: '';

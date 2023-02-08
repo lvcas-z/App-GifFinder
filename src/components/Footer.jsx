@@ -4,7 +4,7 @@ export const Footer = () => {
     return(
         <footer>
             <p>© Made by Lucas Zelaya</p>
-            <a class="logo" href="https://github.com/lvcas-z"><img src={githubLogo} alt="github logo"/></a>
+            <a href="https://github.com/lvcas-z"><img src={githubLogo} alt="github logo"/></a>
         </footer>
     )
 }
