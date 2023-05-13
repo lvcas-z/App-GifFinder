@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lvcas-z/App-GifFinder">
-    <img src="img/logo.png" alt="Logo Gif Finder" width="100" height="120">
+    <img src="src/images/logo.png" alt="Logo Gif Finder" width="100" height="120">
   </a>
 
 <h3 align="center">Gif Finder</h3>
