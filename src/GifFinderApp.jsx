@@ -4,7 +4,7 @@ import { Footer } from './components/Footer'
 import { GifGrid } from './components/GifGrid'
 
 export const GifFinderApp = () => {
-    const apiKey = 'RglSMFKJLvS78G5BXIPSW9Io6BKvilK4'
+    const apiKey = import.meta.env.VITE_FIREBASE_API_KEY
     const [categories, setcategories] = useState([])
 
     const onAddCategory = (newCategory) =>{
